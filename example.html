@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>example</title>
+	<script type="text/javascript" src="jsbridge.js"></script>
+	<script type="text/javascript">
+	window.onload = function(){
+		JsBridge.call("w.qq.com","sdf","fwegosflf",function(){
+			var args = Array.prototype.splice.call(arguments);
+			console.info(args);
+		});
+	}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
